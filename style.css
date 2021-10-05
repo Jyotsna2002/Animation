@@ -11,9 +11,10 @@ body{
     margin: 30px auto;
     box-shadow:1px 2px 60px grey;
     background-image: url('../image/sky7.png');
-    background-repeat:repeat;
+    background-repeat:repeat-x;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+    background-size: auto;
 }
 .road{
     width: 100%;
@@ -29,12 +30,12 @@ body{
     height: 150px;
     position: absolute;
     bottom: 15px;
-    right:20%;
+    right:10%;
 }
 .car2{
     width: 150px;
     height: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
     left:10%;
 }
