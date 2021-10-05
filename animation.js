@@ -79,3 +79,15 @@ function stop()
      bal.style.marginTop=mar+'px';    
      bal.style.marginRight=mar+'px'; 
    }
+   var boy=setInterval(speed,8);
+   skate=0;
+    function speed()
+   { 
+    if(skate==1000)
+    {
+        skate=-130;
+    }
+     skate++;
+     var boy=document.getElementById("boy");
+     boy.style.marginRight=skate+'px';    
+   }
