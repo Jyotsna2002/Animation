@@ -1,7 +1,6 @@
+//window.alert('Hello! Animation is about to begin...');
 var m=0;
 var y;
-var a=0;
-var b;
 function start1() 
 { 
     y=setInterval(move,25);
@@ -9,7 +8,6 @@ function start1()
    { 
        if(m==1000)
        {
-           clearInterval(x);
            m=-130;
        }
      var x;
@@ -31,7 +29,6 @@ function start()
    { 
        if(n==1000)
        {
-           clearInterval(r);
            n=-130;
        }
      var r;
@@ -45,15 +42,40 @@ function stop()
     clearInterval(q);
 }
 
-function run()
-{
-    b=setInterval(move,25);
+   var b=setInterval(move,25);
+   a=0;
     function move()
    { 
-     var c;
+    if(a==1000)
+    {
+        a=-130;
+    }
      a+=5;
-     c=document.getElementById(".sky");
+     var c=document.getElementById("brd1");
      c.style.marginLeft=a+'px';    
    }
-
-}
+   var g=setInterval(run,5);
+   h=0;
+    function run()
+   { 
+    if(h==1000)
+    {
+        h=-130;
+    }
+     h++;
+     var g=document.getElementById("brd2");
+     g.style.marginRight=h+'px';    
+   }
+   var bal=setInterval(fly,10);
+   mar=0;
+    function fly()
+   { 
+    if(mar==-400)
+    {
+        mar=0;
+    }
+     mar--;
+     var bal=document.getElementById("ballon");
+     bal.style.marginTop=mar+'px';    
+     bal.style.marginRight=mar+'px'; 
+   }
