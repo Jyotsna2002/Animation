@@ -1,4 +1,4 @@
-//window.alert('Hello! Animation is about to begin...');
+window.alert('Hello! Animation is about to begin...');
 var m=0;
 var y;
 function start1() 
